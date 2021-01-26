@@ -10,3 +10,5 @@ main(){
         printf("age[%d] = %d \n", i, ageArray[i]);
     }
 }
+
+//note: traverse prints all the arrays one by one
