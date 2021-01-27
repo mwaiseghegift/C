@@ -1,0 +1,1 @@
+A pointer is a variable used to store an address.
