@@ -1,0 +1,1 @@
+A structure is a variable in which different types of data can be stored together in one variable name
