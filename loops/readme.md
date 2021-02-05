@@ -26,3 +26,15 @@ for ( init; condition; increment ) {
    statement(s);
 }
 
+
+
+
+*Do While Loop
+A do...while loop is similar to a while loop, except the fact that it is guaranteed to execute at least one time.
+
+Syntax
+
+do {
+   statement(s);
+} while( condition );
+
