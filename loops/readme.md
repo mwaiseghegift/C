@@ -38,3 +38,9 @@ do {
    statement(s);
 } while( condition );
 
+
+
+
+The Infinite Loop
+
+A loop becomes an infinite loop if a condition never becomes false
