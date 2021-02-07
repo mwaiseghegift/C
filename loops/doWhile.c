@@ -12,3 +12,5 @@ do {
     }while(minimum<=50);
 return 0;
 }
+
+//does then checks
