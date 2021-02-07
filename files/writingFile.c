@@ -6,7 +6,6 @@
 int main(){
 
     FILE *fp;
-    char buff[255];
 
     fp = fopen("/home/gateway47/Documents/C Intro/gf/the_file.txt","w+");
 
