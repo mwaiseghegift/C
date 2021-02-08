@@ -15,3 +15,5 @@ int main(){
     func(3);
     return 0;
 }
+
+//output 123, There is 3 left
