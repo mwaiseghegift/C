@@ -1,3 +1,4 @@
+//command line arguments
 #include <stdio.h>
 #include <stdlib.h>
 
