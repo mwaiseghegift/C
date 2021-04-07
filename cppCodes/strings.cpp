@@ -9,6 +9,7 @@ int main(){
     string fullName = fName + lName;
 
     cout << fullName<<endl;
+    cout<<fullName.length();
 
     //append
     string appendedName = fName.append(lName);
