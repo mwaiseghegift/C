@@ -1,1 +1,0 @@
-Insert operation is to insert one or more data elements into an array
