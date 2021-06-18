@@ -2,7 +2,8 @@
 #define taxRate 10/100;
 
 int netPay(int grossPay){
-    return grossPay*taxRate;
+    int taxCharged=grossPay*taxRate
+    return grossPay-taxCharged;
 }
 
 int main(){
