@@ -21,5 +21,8 @@ int main(){
         printf("\nEnter Marks: ");
         scanf("%d", &marks);
 
+        fprint(sFile, "\n%d Name: %s   Marks: %d \n", i, name, marks);
     }
+    fclose(sFile);
+    return 0;
 }
