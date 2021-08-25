@@ -8,7 +8,9 @@ int main(void) {
     int sum=0;
 
     for(int n=0; n<10; n++){
-        sum = sum+array[n];
+        if (array[n]%2==0){
+            sum = sum+array[n];
+        }
     }
      printf("Sum = %d\n", sum);
      float average = sum/10;

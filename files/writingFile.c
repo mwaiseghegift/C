@@ -15,5 +15,4 @@ int main(){
     //using fputs
     fputs("You loved one girl but she ended up screwing you..\n", fp);
     fclose(fp);
-
 }
