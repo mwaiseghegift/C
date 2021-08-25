@@ -13,4 +13,13 @@ int main(){
         printf("Oops, There was an error with the file");
         exit(1);
     }
+
+    for(i=0; i<n; ++i){
+        printf("\nEnter Name: ", i+1);
+        scanf("%s", &name);
+
+        printf("\nEnter Marks: ");
+        scanf("%d", &marks);
+
+    }
 }
