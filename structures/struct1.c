@@ -30,12 +30,22 @@ int main(){
 
     int catOutcome = categoryOutcome(sales);
 
-    switch(enum){
-        case(>5000):
-           commission = (2.5/100)*sales;
-           break;
-
-        
+    switch(catOutcome){
+        case 0:
+            commission = sales * 0.05;
+            break;
+        case 1:
+            commission = sales * 0.10;
+            break;
+        case 2:
+            commission = sales * 0.15;
+            break;
+        case 3:
+            commission = sales * 0.20;
+            break;
+        case 4:
+            commission = sales * 0.25;
+            break;
 
         default:
             printf("Error! Please check your input");
