@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//function to convert the sales to contants for switch statement
+/* function to convert the sales to contants for 
+switch statement
+*/
 
 int categoryOutcome(sales){
     if(sales < 1000){
@@ -19,8 +21,7 @@ int categoryOutcome(sales){
     else if(sales >= 4000 && sales < 5000){
         return 4;
     }
-}
-   
+} 
 
 int main(){
 
