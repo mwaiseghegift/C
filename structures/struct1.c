@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-enum Cases {
-    first = >5000;
-    second = >=4000<5000;
-    third = >=3000<4000;
-    fourth = >=2000<3000;
-    fifth = >=1000<2000;
-    sixth = <1000;
-}
+   
 
 int main(){
 
     int sales, commission;
+
+    bool first   (>5000);
+    bool second  >=4000<5000;
+    third = >=3000<4000;
+    fourth = >=2000<3000;
+    fifth = >=1000<2000;
+    sixth = <1000;
+
 
     printf("Enter the amout \n");
 
