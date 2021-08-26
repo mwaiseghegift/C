@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+C program to read name and marks of N number of 
+students and store them in a file.
+*/
+
 int main(){
     char name[50];
     int marks, i, n;
