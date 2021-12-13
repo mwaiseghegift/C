@@ -5,10 +5,9 @@ void move(int, int, int, int);
 
 int main(){
     int diskNum;
-    cout<<"Enter the number of disks";
+    cout<<"Enter the number of disks: ";
     cin >> diskNum;
     move(diskNum, 1,3,2);
-    system("PAUSE");
     return 0;
 }
 
