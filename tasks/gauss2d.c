@@ -1,9 +1,9 @@
-	#include <stdio.h>
-	#include <math.h>
-	#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
-	int main(int argc, char *argv[])
-	{
+int main(int argc, char *argv[])
+{
 	int m; 
 	int n;
 	double tol;// = 0.0001;
