@@ -11,16 +11,17 @@ int main(){
     return 0;
 }
 
-void towerOfHanoi(int count, int num1, int num3, int num2){
+void towerOfHanoi(int count, int disk1, int disk3, int disk2){
     if (count>0){
-        towerOfHanoi(count-1, num1, num2, num3);
-        cout<<"Move disk "<<count<<" from "<< num1<<" to "<<num3<<endl;
-        towerOfHanoi(count-1, num2, num3, num1);
+        towerOfHanoi(count-1, disk1, disk2, disk3);
+        cout<<"Move disk "<<count<<" from "<< disk1<<" to "<<disk3<<endl;
+        towerOfHanoi(count-1, disk2, disk3, disk1);
     }
 }
 
-/*
-    int num1 --> rod where disk is present
-    int num2 --> Rod where the disk is to be moved
-    int num2 --> Auxilliary
+/*  
+    int count --> Number of disks
+    int disk1 --> rod where disk is present (Source)
+    int disk2 --> Rod where the disk is to be moved (Destination)
+    int disk3 --> Auxilliary
 */
