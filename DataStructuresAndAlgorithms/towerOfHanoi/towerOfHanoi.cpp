@@ -10,7 +10,7 @@ int main(){
     cin >> diskNum;
     towerOfHanoi(diskNum, 1,3,2);
 
-    //show number of steps taken
+    //show number of steps taken on console
     cout<<"\vIt took "<<step_counter<<" steps for the "
                 <<diskNum<<" disks to reach destination";
     return 0;
