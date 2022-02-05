@@ -1,7 +1,7 @@
 
 /*
     CS 410 Operating Systems
-    Lastname Firstname
+    Balusu
     Lab 01
 */
 #include <stdio.h>
@@ -47,18 +47,4 @@ int main(){
     return 0; 
 }
 
-/*
 
-printf("Do you wish to continue? Y/N:" );
-        scanf("%c", &continueOption);
-
-        if (continueOption == 'Y')
-            continue;
-        else
-            break;
-
-            A simple fix is to replace the second scanf() with scanf(" %c", &choice1). 
-            The blank in the format string eats up white space, including newlines, 
-            and reads the first non-blank character. Of course, it too leaves a newline behind.
-
-*/
