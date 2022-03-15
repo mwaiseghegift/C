@@ -1,6 +1,66 @@
 #include <stdio.h>
 
-int main(){
+/*
+This program is created by
+a -     Student Name= Maha Faisal Ali
+b -     Id= 60124
+c -     Section= F10
+d -     Course Code= CS159
+*/
+
+
+int main() {
+    //Part A
+    printf("//////////////////////PART A /////////////////////\n");
+
+    int NB = 6;
+    float rank, average, sum=0; 
+    char gender;
+    int count=0;
+
+    printf("Enter the rank and the gender (M or F) of %d employees\n", NB);
+
+    // while loop to enter data into an array
+    
+    while (NB>0){
+        scanf("%f %c", &rank, &gender );
+        if (gender == 'M'){
+            sum = sum + rank;
+            count = count+1;
+        }
+        NB=NB-1;
+    }
+
+    printf("Part A is created by student Maha Ali - Course CS159 - Spring 2022 - ID = 60124");
+
+    average = sum/count;
+    printf("The Average rank of male empoyees: %.1f", average);
+
+
+    printf("//////////////////////PART B /////////////////////\n");
+
+    int NB_LAPTOP = 6;
+    float laptopPrice[NB_LAPTOP];
+    printf("Please enter the price of 4 laptops: ");
+
+    //get laptopPrice inputs
+    scanf("%f %f %f %f %f %f", &laptopPrice[0], &laptopPrice[1], &laptopPrice[2], &laptopPrice[3], &laptopPrice[4], &laptopPrice[5]);
+
+    printf("Part B is created by student Maha Ali - Course CS159 - Spring 2022 - ID = 60124");
+     
+    //discount price from ID 6+0+1+2+4
+    float discount = 0.13;
+
+    //table to print the laptop prices and the discounted price
+    printf("Item    \t\t Original Price\t\t Price with Discount\n");
+    printf("-----   \t\t---------------\t\t--------------------------\n");
+    printf("Laptop-1\t\t %.2f\t\t %.2f\n", laptopPrice[0], laptopPrice[0] - laptopPrice[0] * discount);
+    printf("Laptop-2\t\t %.2f\t\t %.2f\n", laptopPrice[1], laptopPrice[1] - laptopPrice[1] * discount);
+    printf("Laptop-3\t\t %.2f\t\t %.2f\n", laptopPrice[2], laptopPrice[2] - laptopPrice[2] * discount);
+    printf("Laptop-4\t\t %.2f\t\t %.2f\n", laptopPrice[3], laptopPrice[3] - laptopPrice[3] * discount);
+    printf("Laptop-5\t\t %.2f\t\t %.2f\n", laptopPrice[4], laptopPrice[4] - laptopPrice[4] * discount);
+    printf("Laptop-6\t\t %.2f\t\t %.2f\n", laptopPrice[5], laptopPrice[5] - laptopPrice[5] * discount);
+
     printf("//////////////////////PART C /////////////////////\n");
 
     int number = 60124;
@@ -32,6 +92,8 @@ int main(){
         }
         printf("\n");
     }
+
+    printf("Fun1_F10_60124 is created by student ID = 60124 section F10\n");
 
 
    // Initialization of A and B 
@@ -84,7 +146,10 @@ int main(){
         }
 
         z++;
+        //get total price of chairs after discount
         totalPrice = totalPrice+afterDiscount;
     }
     printf("Total price after discount of all chairs which got a discount of 10%% is %.3f\n", totalPrice);
-}
+
+    return 0;
+    }
