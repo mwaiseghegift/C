@@ -10,7 +10,7 @@ int main(){
     //get laptopPrice inputs
     scanf("%f %f %f %f %f %f %f %f %f %f", &laptopPrice[0], &laptopPrice[1], &laptopPrice[2], &laptopPrice[3], &laptopPrice[4], &laptopPrice[5], &laptopPrice[6], &laptopPrice[7], &laptopPrice[8], &laptopPrice[9] );
 
-     printf("Part B is created by student Maha Ali - Course CS159 - Spring 2022 - ID = 60124");
+    printf("Part B is created by student Maha Ali - Course CS159 - Spring 2022 - ID = 60124");
      
     //discount price from ID 6+0+1+2+4
     float discount = 0.13;
