@@ -6,7 +6,7 @@ int main(){
     int reversedNumberArray[6];
     int k = 0,l = 0, j;
     
-    //for loop to print the digits of the number from 4
+    //for loop to print each digit of the AUM student ID
     for (int i = 5; i>0; i--){
         numberArray[k] = idNumber%10;
         k++;
@@ -14,7 +14,7 @@ int main(){
     }
     printf("\n");
 
-    //reversed number array
+    //reversed AUM student ID because the digits are in reverse from the previous loop
     for (j = k - 1; j > -1; j--) {
         reversedNumberArray[l] = numberArray[j];
         l++;
