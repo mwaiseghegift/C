@@ -4,7 +4,7 @@ int main(){
 
     /*
     This program is created by
-    1-      Maha Ali
+    1-      Maha Faisal Ali
     2-      60124
     3-      Spring 2022
     4-      F10
@@ -42,17 +42,18 @@ int main(){
         printf("\n");
     }
 
-    printf("The program is created by student Maha Ali - Mechanical engineering- section F10 - ID = 60124 course code CS159, Spring 2022");
+    printf("The program is created by student Maha Ali - Mechanical engineering- section F10 - ID = 60124 course code CS159, Spring 2022\n");
 
 
     int M=6;
-    float employeeSalary[M], totalSalaryWithBonus, totalSalaryWithoutBonus;
+    float employeeSalary[M];
+    float totalSalaryWithBonus, totalSalaryWithoutBonus;
     float averageSalaryWithBonus=0, averageSalaryWithoutBonus=0;
 
     //Prompts the user to enter the salary of N employees
     for (int i = 0; i < M; i++) {
         printf("Please enter the salary of employee %d: ", i+1);
-        scanf("%.6f", &employeeSalary[i]);
+        scanf("%f", &employeeSalary[i]);
     }
 
     //bonus is the percentage sum of all the digits of the AUM Student ID which is 60124
@@ -65,9 +66,9 @@ int main(){
     printf("--------------------------------------------------------------------------------\n");
     //for loop to print the salary table
     for (int i = 0; i < M; i++) {
-        printf("Employee %d\t\t %.6f\t\t\t %.6f\n", i+1, employeeSalary[i], employeeSalary[i]*bonus);
+        printf("Employee %d\t\t %.6f\t\t\t %.6f\n", i+1, employeeSalary[i], employeeSalary[i]+(employeeSalary[i]*bonus));
         totalSalaryWithoutBonus += employeeSalary[i];
-        totalSalaryWithBonus += employeeSalary[i]*bonus;
+        totalSalaryWithBonus += employeeSalary[i]+(employeeSalary[i]*bonus);
     }
 
     // Average salary without bonus
