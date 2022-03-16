@@ -3,10 +3,10 @@
 int main() {
     printf("//////////////////////PART A /////////////////////\n");
 
-    int NB = 6;
-    float rank, average, sum=0; 
+    int NB = 3;
+    float rank, rankAverage, rankTotal=0; 
     char gender;
-    int count=0;
+    int employeeCount=0;
 
     printf("Enter the rank and the gender (M or F) of %d employees\n", NB);
 
@@ -15,16 +15,16 @@ int main() {
     while (NB>0){
         scanf("%f %c", &rank, &gender );
         if (gender == 'M'){
-            sum = sum + rank;
-            count = count+1;
+            rankTotal = rankTotal + rank;
+            employeeCount = employeeCount+1;
         }
         NB=NB-1;
     }
 
-    printf("Part A is created by student Maha Ali - Course CS159 - Spring 2022 - ID = 60124");
+    printf("Part A is created by student Maha Ali - Course CS159 - Spring 2022 - ID = 60124\n");
 
-    average = sum/count;
-    printf("The Average rank of male empoyees: %.1f", average);
+    rankAverage = rankTotal/employeeCount;
+    printf("The average rank of male empoyees: %.1f", rankAverage);
 
 
     return 0;

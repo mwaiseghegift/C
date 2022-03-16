@@ -31,17 +31,18 @@ int main() {
         NB=NB-1;
     }
 
-    printf("Part A is created by student Maha Ali - Course CS159 - Spring 2022 - ID = 60124");
+    printf("Part A is created by student Maha Ali - Course CS159 - Spring 2022 - ID = 60124\n");
 
     average = sum/count;
-    printf("The Average rank of male empoyees: %.1f", average);
+    printf("The Average rank of male empoyees: %.1f\n", average);
 
 
     printf("//////////////////////PART B /////////////////////\n");
 
+
     int NB_LAPTOP = 6;
     float laptopPrice[NB_LAPTOP];
-    printf("Please enter the price of 4 laptops: ");
+    printf("Please enter the price of %d laptops: ", NB_LAPTOP);
 
     //get laptopPrice inputs
     scanf("%f %f %f %f %f %f", &laptopPrice[0], &laptopPrice[1], &laptopPrice[2], &laptopPrice[3], &laptopPrice[4], &laptopPrice[5]);
@@ -50,16 +51,18 @@ int main() {
      
     //discount price from ID 6+0+1+2+4
     float discount = 0.13;
+    float totalWithoutDiscount=0, totalWithDiscount=0;
 
-    //table to print the laptop prices and the discounted price
     printf("Item    \t\t Original Price\t\t Price with Discount\n");
     printf("-----   \t\t---------------\t\t--------------------------\n");
-    printf("Laptop-1\t\t %.2f\t\t %.2f\n", laptopPrice[0], laptopPrice[0] - laptopPrice[0] * discount);
-    printf("Laptop-2\t\t %.2f\t\t %.2f\n", laptopPrice[1], laptopPrice[1] - laptopPrice[1] * discount);
-    printf("Laptop-3\t\t %.2f\t\t %.2f\n", laptopPrice[2], laptopPrice[2] - laptopPrice[2] * discount);
-    printf("Laptop-4\t\t %.2f\t\t %.2f\n", laptopPrice[3], laptopPrice[3] - laptopPrice[3] * discount);
-    printf("Laptop-5\t\t %.2f\t\t %.2f\n", laptopPrice[4], laptopPrice[4] - laptopPrice[4] * discount);
-    printf("Laptop-6\t\t %.2f\t\t %.2f\n", laptopPrice[5], laptopPrice[5] - laptopPrice[5] * discount);
+   
+    for (int i = 0; i < NB_LAPTOP; i++) {
+         printf("Laptop-%d\t\t %.2f\t\t %.2f\n", i+1, laptopPrice[i], laptopPrice[i] - laptopPrice[i] * discount);
+        totalWithoutDiscount = totalWithoutDiscount + laptopPrice[i];
+        totalWithDiscount = totalWithDiscount + laptopPrice[i] - laptopPrice[i] * discount;
+    }
+    printf("Total before discount: %.2f\n", totalWithoutDiscount);
+    printf("Total with discount: %.2f\n", totalWithDiscount);
 
     printf("//////////////////////PART C /////////////////////\n");
 
@@ -96,10 +99,11 @@ int main() {
     printf("Fun1_F10_60124 is created by student ID = 60124 section F10\n");
 
 
+    // commented the code because it is misbehaving on initialization of A
    // Initialization of A and B 
+   /*
     int A = reversedNumberArray[0];
     int B = reversedNumberArray[1];
-    int M;
 
     //Determining which value is greater than the other
     if (A > B) {
@@ -109,8 +113,12 @@ int main() {
         M = B;
     }
     else  printf("Error");
-
     printf("The value of M is %d\n", M);
+
+    */
+
+
+    int M = 6;
 
     //Using a while loop, prompt the user to enter the price of M number of chairs
     int noOfChairs = M;
