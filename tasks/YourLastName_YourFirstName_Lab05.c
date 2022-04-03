@@ -8,6 +8,7 @@ Lab 05
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <signal.h>
 
 int main(){
     int i, n=10;
@@ -22,6 +23,13 @@ int main(){
         nextTerm = firstTerm + secondTerm;
         firstTerm = secondTerm;
         secondTerm = nextTerm;
+
+        // A signal to terminate the program and resume the next process
+        if(i ==4){
+            printf("\n");
+            fflush(stdout);
+            kill(getpid(), SIGUSR1);
+        }
     }
     printf("\n");
     return 0;
