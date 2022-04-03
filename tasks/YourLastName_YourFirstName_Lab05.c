@@ -10,7 +10,6 @@ Lab 05
 #include <unistd.h>
 
 int main(){
-
     int i, n=10;
     int firstTerm = 0;
     int secondTerm = 1;
@@ -18,6 +17,7 @@ int main(){
 
     for (i = 0; i < n; i++){
         printf("%d ", firstTerm);
+        fflush(stdout);
         sleep(1);
         nextTerm = firstTerm + secondTerm;
         firstTerm = secondTerm;
