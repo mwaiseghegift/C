@@ -24,13 +24,14 @@ int main(){
         firstTerm = secondTerm;
         secondTerm = nextTerm;
 
-        // A signal to terminate the program and resume the next process
-        if(i ==4){
-            printf("\n");
-            fflush(stdout);
-            kill(getpid(), SIGUSR1);
+        // A kill signal to terminate the program when i == 4 and resume after some time)
+        if (i == 4){
+            printf("Program terminated\n");
+            kill(getpid(), SIGKILL);
+
         }
     }
+
     printf("\n");
     return 0;
 
