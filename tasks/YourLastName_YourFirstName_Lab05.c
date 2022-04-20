@@ -1,7 +1,6 @@
 
 /*
     CS 410 OS
-    Lastname Firstname
     Lab 05
 */
 
